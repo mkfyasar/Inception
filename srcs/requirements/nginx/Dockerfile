@@ -9,4 +9,6 @@ RUN chmod +x ./tmp/nginx_script.sh
 
 ENTRYPOINT [ "./tmp/nginx_script.sh" ]
 
+EXPOSE 443
+
 CMD [ "nginx", "-g", "daemon off;" ]
